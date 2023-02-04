@@ -9,7 +9,7 @@ function Header(props) {
             <div className={classes.nav}>
                 <header className={classes.header}>
                     <h1>Food Order</h1>
-                    <HeaderButton />
+                    <HeaderButton onClickCart={props.onCartShow} />
                 </header>
             </div>
             <div className={classes['main-image']}>
