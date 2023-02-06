@@ -15,7 +15,6 @@ function Header(props) {
             <div className={classes['main-image']}>
                 <img src={image} alt='Pizza' />
             </div>
-
         </Fragment>
     );
 }
