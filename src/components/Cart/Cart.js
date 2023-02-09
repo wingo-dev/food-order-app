@@ -7,8 +7,6 @@ import classes from './Cart.module.css';
 
 
 const Cart = (props) => {
-
-
     const cartCtx = useContext(CartContext);
 
     const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
