@@ -26,12 +26,15 @@ const Cart = (props) => {
                 return (
                     <CartItem
                         key={item.id}
+
+                        id={item.id}
+                        item={item}
+
                         name={item.name}
                         amount={item.amount}
                         price={item.price}
-                        onRemove={cartItemRemoveHandler.bind(null, item.id)}
-                        onAdd={cartItemAddHandler.bind(null, item)}
-
+                        onRemove={cartItemRemoveHandler}
+                        onAdd={cartItemAddHandler}
                     />
                 );
             })}
