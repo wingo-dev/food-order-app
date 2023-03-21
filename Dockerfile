@@ -1,11 +1,15 @@
-FROM node
+FROM node:14-alpine
 
 WORKDIR /food_order
 
-COPY . /food_order
+COPY package.json /food_order
 
 RUN npm install
 
-EXPOSE 80
+COPY . .
+
+RUN npm run build
+
+EXPOSE 3000
 
 CMD ["npm", "start"]
